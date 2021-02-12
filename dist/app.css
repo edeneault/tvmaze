@@ -1,0 +1,18 @@
+.modal-header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    color: floralwhite;
+    opacity: 1;
+}
+
+.close.active,
+.close:active,
+.close:focus,
+.close:hover,
+.open>.dropdown-toggle.close {
+    color: $lt-gray;
+    background-color: $background-transparent;
+    border-color: $background-transparent;
+}
