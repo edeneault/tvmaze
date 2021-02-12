@@ -1,5 +1,5 @@
 // Global Selectors and Constance
-const BASE_URL= "http://api.tvmaze.com/search/shows" 
+const BASE_URL= "https://api.tvmaze.com/search/shows" 
 const $showsList = $("#shows-list");
 const $episodeList = $("#episodes-list");
 
@@ -81,7 +81,7 @@ $("#search-form").on("submit", async function handleSearch(evt) {
 
 // Function to get Episodes //
 async function getEpisodes(id) {
-  let response = await axios.get(`http://api.tvmaze.com/shows/${id}/episodes`);
+  let response = await axios.get(`https://api.tvmaze.com/shows/${id}/episodes`);
 
   let episodes = response.data.map(episode => ({
     id: episode.id,
