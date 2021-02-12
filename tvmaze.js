@@ -40,7 +40,7 @@ function populateShows(shows) {
            <div class="card-body col-12 col-sm-12 ">
            <img class="card-img-top" src="${show.image.medium}" alt="No">
              <h5 class="card-title">${show.name}</h5>
-             <button class="btn btn-info mt-auto" data-toggle="modal" data-target="#myModal"  id="${show.id}"> Episode - More Info</button>
+             <button class="btn btn-info mt-auto" data-toggle="modal" data-target="#myModal"  id="${show.id}"> Episodes - More Info</button>
              <p class="card-text ">${show.summary}</p>
              
            </div>
@@ -93,7 +93,6 @@ async function getEpisodes(id) {
   return episodes;
 }
 
-
 // Funtion to add episodes to the mark-up//
 function populateEpisodes(episodes) {
   
@@ -105,5 +104,9 @@ function populateEpisodes(episodes) {
       `<li>${episode.name}</li>`);
     $episodeList.append($item)
   }
+}
+
+function firstSplash() {
+
 }
 
